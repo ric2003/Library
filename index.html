@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c1593d761b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <header id="header">
+      <h1><i class="fa-solid fa-book-bookmark"></i> Library</h1>
+      <button id="showFormButton">Add Book</button>
+    </header>
+
+    <form id="bookRegisterForm" action="" method="get">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        id="bookTitle"
+        name="bookTitle"
+        placeholder="Book Title..."
+        required
+      />
+      <label for="author">Author</label>
+      <input
+        type="text"
+        id="bookAuthor"
+        name="bookAuthor"
+        placeholder="Author Name..."
+        required
+      />
+      <label for="page">Pages</label>
+      <input
+        type="number"
+        id="pageNum"
+        name="pageNum"
+        placeholder="Number of pages..."
+        required
+      />
+      <input type="submit" value="Add" />
+    </form>
+    <div id="library"></div>
+    <footer id="footer">
+      <a href="https://github.com/ric2003/Library"
+        ><i class="fa-brands fa-github"></i></a
+      >Ricardo Gonçalves &copy
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

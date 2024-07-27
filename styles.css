@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    grid-template-rows: 20vh 1fr 5vh;
+    height: 100vh;
+    margin: 0px;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cdd3dd;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8EEF2;
+}
+#library{
+    background-color: #E8EEF2;
+}
+
+#library .book-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #E8EEF2;
+    box-shadow: 0 2px 2px #6e7687, 0 -2px 2px #6e7687;
+    padding: 10px;
+    justify-items: center;
+}
+
+
+
+#bookRegisterForm {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #A8B9C7;
+    color: #ffffff;
+    padding: 2rem;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#bookRegisterForm input[type="submit"] {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #8FA5B7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#bookRegisterForm button:hover {
+    background-color: #424242;
+}
+
+#header button{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fa-github{
+    padding: 5px;
+    color: black;
+    font-size: 1.5rem;
+}
+.fa-github:active{
+    color: black;
+}
+.fa-github:hover{
+    color: purple;
+}
